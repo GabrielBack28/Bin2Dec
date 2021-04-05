@@ -9,7 +9,6 @@ function App() {
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(true);
 
   useEffect(() => {
-    console.log(binary);
     if (binary === '') {
       setButtonDisabled(true);
       return;
@@ -53,6 +52,7 @@ function App() {
             value={binary}
             onChange={(event) => setBinary(event.target.value)}
             label="Binary Input"
+            max={8}
           />
           <Button
             label="Convert"
