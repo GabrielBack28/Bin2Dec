@@ -52,7 +52,7 @@ function App() {
             value={binary}
             onChange={(event) => setBinary(event.target.value)}
             label="Binary Input"
-            max={8}
+            maxLength={8}
           />
           <Button
             label="Convert"
